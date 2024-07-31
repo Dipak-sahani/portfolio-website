@@ -1,0 +1,87 @@
+.about-container{
+    padding-top: 10vh;
+    padding-left: 25%;
+    padding-bottom: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+body{
+    background: #488085
+}
+
+.about-container p{
+    padding: 10vh;
+    color: white;
+    
+}
+
+.resume-para{
+    width: 90vh;
+    font-size: larger;
+    
+
+}
+.resume-para p{
+    font-size: x-large;
+    background-color: rgba(255, 228, 196, 0.186);
+    border-radius: 20px;
+}
+
+.downcv a{
+    text-decoration: none;
+    color: aliceblue;
+   
+    
+}
+
+
+.downcv{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(130, 62, 107);
+    border-radius: 20px;
+    padding-left: 27px;
+    padding-top: 6px;
+    transition: 0.3s;
+}
+
+.downcv:hover{
+    height: 34px;
+    width: 155px;
+    padding-left: 28px;
+    padding-top: 8px;
+}
+
+.edu-detail{
+   padding-top: 10vh;
+   
+}
+.edu-detail h1{
+    color: rgb(91, 24, 0);
+    font-weight: 800;
+}
+.edu-detail ul{
+    font-weight: 600;
+}
+
+@media only screen and (max-width:600px){
+    .about-container{
+        padding-top: 2%;
+        padding-left: 2%;
+        
+    }
+    .about-container p{
+        padding: 20px;
+        width: 42vh;
+    }
+    .resume-para{
+        padding-top: 2vh;
+        width: 42.5vh;
+        padding-left: 1vh;
+    }
+    ul{
+        padding-left: 2vh;
+    }
+}

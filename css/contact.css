@@ -1,0 +1,115 @@
+.contact-container{
+    padding-top: 6%;
+    padding-left: 25%;
+    padding-bottom: 10%;
+    height: 100%;
+    width: 100%; 
+}
+
+body{
+    background-image: url('/books-8770940_1280.jpg');
+}
+
+
+.form-container{
+    padding-top: 10vh;
+    height: 70vh;
+    width: 80vh;
+    backdrop-filter: blur(4px);
+    
+}
+.form-container:hover{
+    border: solid 2px black;
+    border-radius: 20px;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    
+}
+
+.form-user-name{
+    padding: 1vh;
+    height: 6vh;
+    width: 65vh;
+    border-radius: 10px;
+    font-size: larger;
+
+}
+.form-user-name::placeholder{
+    padding: 1vh;
+}
+.form-user-name:focus{
+    border:solid 5px rgb(255, 166, 0) ;
+}
+
+.form-user-email{
+    padding: 1vh;
+    height: 6vh;
+    width: 65vh;
+    border-radius: 10px;
+    font-size: larger;
+}
+.form-user-email::placeholder{
+    padding: 1vh;
+}
+.form-user-email:focus{
+    border:solid 5px rgb(255, 153, 0) ;
+}
+.form-user-message{
+    padding: 1vh;
+    height: 15vh;
+    width: 65vh;
+    border-radius: 10px;
+    font-size: larger;
+}
+.form-user-message::placeholder{
+    padding: 1vh;
+}
+.form-user-message:focus{
+    border:solid 5px rgb(255, 128, 0) ;
+}
+.form1 button{
+    font-size: large;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 30vh;
+    height: 6vh;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: green;
+    
+}
+
+.form1 button:hover{
+    width: 32vh;
+    height: 7vh;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .form-container{
+        height: 70vh;
+        width: 42vh;
+        
+    }
+    .contact-container{
+        padding-left: 1vh;
+        padding-bottom: 20%;
+        height: 800px;
+        
+    }
+    .form-user-name{
+        height: 6vh;
+        width: 33vh;
+    }
+    .form-user-email{
+        width: 33vh;
+    }
+    .form-user-message{
+        width: 33vh;
+    }
+}
