@@ -1,6 +1,7 @@
 .about-container{
-    padding-top: 10vh;
-    padding-left: 25%;
+    padding-top: 17vh;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-bottom: 10%;
     width: 100%;
     display: flex;
@@ -12,13 +13,13 @@ body{
 }
 
 .about-container p{
-    padding: 10vh;
+    padding: 5%;
     color: white;
     
 }
 
 .resume-para{
-    width: 90vh;
+    
     font-size: larger;
     
 
@@ -68,18 +69,18 @@ body{
 
 @media only screen and (max-width:600px){
     .about-container{
-        padding-top: 2%;
-        padding-left: 2%;
+        
+        padding-left: 10%;
         
     }
     .about-container p{
-        padding: 20px;
-        width: 42vh;
+        /* padding: 20px; */
+        width: 90%;
     }
     .resume-para{
         padding-top: 2vh;
-        width: 42.5vh;
-        padding-left: 1vh;
+        width: 90%;
+        
     }
     ul{
         padding-left: 2vh;

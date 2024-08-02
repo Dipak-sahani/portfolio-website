@@ -1,26 +1,31 @@
 .contact-container{
-    padding-top: 6%;
-    padding-left: 25%;
+    padding-top: 17vh;
+    padding-left: 20%;
     padding-bottom: 10%;
-    height: 100%;
-    width: 100%; 
+    
 }
 
 body{
     background-image: url('./books.png');
+    margin-top: 15vh;
+    margin-bottom: 8vh;
 }
 
 
 .form-container{
+    text-align: center;
     padding-top: 10vh;
-    height: 70vh;
-    width: 80vh;
-    backdrop-filter: blur(4px);
+    padding-bottom: 10%;
+    height: 90%;
+    width: 70%;
+    background-color: rgba(0, 255, 255, 0.096);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
     
 }
 .form-container:hover{
     border: solid 2px black;
-    border-radius: 20px;
+    
 }
 .form1{
     display: flex;
@@ -33,7 +38,7 @@ body{
 .form-user-name{
     padding: 1vh;
     height: 6vh;
-    width: 65vh;
+    width: 60%;
     border-radius: 10px;
     font-size: larger;
 
@@ -48,7 +53,7 @@ body{
 .form-user-email{
     padding: 1vh;
     height: 6vh;
-    width: 65vh;
+    width: 60%;
     border-radius: 10px;
     font-size: larger;
 }
@@ -61,7 +66,7 @@ body{
 .form-user-message{
     padding: 1vh;
     height: 15vh;
-    width: 65vh;
+    width: 60%;
     border-radius: 10px;
     font-size: larger;
 }
@@ -72,11 +77,12 @@ body{
     border:solid 5px rgb(255, 128, 0) ;
 }
 .form1 button{
+    padding: 1%;
     font-size: large;
     font-weight: 700;
     border-radius: 20px;
-    width: 30vh;
-    height: 6vh;
+    width: fit-content;
+    height: fit-content;
     cursor: pointer;
     transition: 0.3s;
     background-color: green;
@@ -84,32 +90,62 @@ body{
 }
 
 .form1 button:hover{
-    width: 32vh;
-    height: 7vh;
+    transform: scale(1.08);
 }
 
 
 
 @media only screen and (max-width:600px) {
     .form-container{
-        height: 70vh;
-        width: 42vh;
+        backdrop-filter: none;
+        height: 100%;
+        width: 80%;
+        padding-top: 2%;
         
     }
     .contact-container{
-        padding-left: 1vh;
+        padding-top: 10%;
+        padding-left: 20%;
         padding-bottom: 20%;
         height: 800px;
         
     }
     .form-user-name{
         height: 6vh;
-        width: 33vh;
+        width: 80%;
     }
     .form-user-email{
-        width: 33vh;
+        width: 80%;
     }
     .form-user-message{
-        width: 33vh;
+        width: 80%;
     }
+}
+
+
+@media (600px<= width <=900px){
+    .contact-container{
+        padding-left: 25%;
+        padding-right: 10%;
+    }
+    .form-container{
+        backdrop-filter: none;
+    }
+}
+
+
+@media (orientation: landscape){
+    .form-container{
+        backdrop-filter: none;
+    }
+    .form-user-name{
+        font-size: large;
+    }
+    .form-user-email{
+        font-size: large;
+    }
+    .form-user-message{
+        font-size: large;
+    }
+    
 }

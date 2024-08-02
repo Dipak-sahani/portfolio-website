@@ -1,7 +1,8 @@
 
 .nav-bar{
     background: #780738;
-    padding: 4px;
+    /* padding: 2%; */
+    padding-left: 2%;
     height: 15vh;
     width: 100%;
     border-bottom-left-radius: 20px;
@@ -10,9 +11,13 @@
     grid-template-columns: auto 10% 10% 10% 10% 10%;
     grid-gap: 2px;
     align-items: center;
+    
     transition: 0.3s;
     font-weight: 800;
     font-size: larger;
+    position: fixed;
+    top: 0;
+    
 }
 .threeline{
     display: none;
@@ -25,13 +30,15 @@
     
 }
 body{
+    /* margin-top: 15vh; */
+    margin-bottom: 8vh;
     background: #ad5491;
 }
 
 .logo-image{
     
+
     height: 10vh;
-    width: 10vh;
     border: solid 2px rgb(255, 0, 0);
     border-radius: 100%;
     
@@ -41,14 +48,17 @@ body{
     text-decoration: none;
     color: antiquewhite;
     text-align: center;
+   
     
 }
 .nav-bar a.active{
     color: rgb(197, 239, 12);
     background-color: #c73186;
-    padding: 6px;
-    align-self: center;
+    width: max-content;
+    height: max-content;
+    padding: 1rem;
     border-radius: 20px;
+    justify-self: center;
    
 }
 .nav-tag:hover{
@@ -67,7 +77,7 @@ body{
 }
 .con-1{
    
-    padding-left: 20vh;
+    padding-left: 10%;
     padding-top: 20vh;
     padding-right: 5vh;
 
@@ -147,7 +157,7 @@ body{
 .footer{
     background: #082b30;
     height: 8vh;
-    position: relative;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -168,12 +178,13 @@ body{
 
 
 
-@media only screen and (max-width:600px){
+@media (width <= 600px){
     .nav-bar{
-        height: 10vh;
-        display: flex;
+        height: 15vh;
+        padding-right: 5vh;
+        display: grid;
+        grid-template-columns: auto 10%;
         gap: 50%;
-        padding-right: 10px;
         
     }
     .container{
@@ -194,7 +205,7 @@ body{
    
         padding-left: 2vh;
         padding-top: 4vh;
-        width: 40vh;
+    
     
     }
     .nav-tag{
@@ -248,4 +259,23 @@ body{
         gap: 0;
     }
     
+}
+
+@media  (600px<width<=900px){
+    .nav-bar{
+    grid-template-columns: auto 10% 10% 10% 10%;
+    gap: 8%;
+    padding-right: 4vh;
+
+    }   
+}
+
+
+@media (height<=350px){
+    .nav-bar{
+        height: 60px;
+    }
+    .logo-image{
+        height: 50px;
+    }
 }
