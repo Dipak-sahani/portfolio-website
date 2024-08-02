@@ -32,7 +32,7 @@
 body{
     /* margin-top: 15vh; */
     margin-bottom: 8vh;
-    background: #ad5491;
+    background: #e571c0;
 }
 
 .logo-image{
@@ -77,10 +77,17 @@ body{
 }
 .con-1{
    
-    padding-left: 10%;
+    padding-left: 8%;
     padding-top: 20vh;
     padding-right: 5vh;
+    
 
+}
+.con-1-1{
+    padding-left: 2%;
+    padding: 2vh;
+    background-color: #188dad52;
+    border-radius: 30px;
 }
 .con-1 h1{
     color: wheat;
@@ -91,11 +98,13 @@ body{
     transition: 0.6s;
 }
 .con-1 span{
-    color: rgb(63, 2, 2);
+    color: rgb(0, 0, 106);
+    font-size: larger;
+    font-weight: 700;
 }
 .con-1 p{
     padding-top: 20px;
-    color: wheat;
+    color: rgb(58, 2, 2);
     font-size: larger;
 }
 .con-1 h1:hover{
@@ -174,13 +183,15 @@ body{
     height: 5vh;
 }
 
-
+.footer p{
+    color: #4cbede;
+}
 
 
 
 @media (width <= 600px){
     .nav-bar{
-        height: 15vh;
+        height: 12vh;
         padding-right: 5vh;
         display: grid;
         grid-template-columns: auto 10%;
@@ -204,7 +215,7 @@ body{
     .con-1{
    
         padding-left: 2vh;
-        padding-top: 4vh;
+        padding-top: 12vh;
     
     
     }
