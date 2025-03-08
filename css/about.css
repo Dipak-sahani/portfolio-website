@@ -17,6 +17,13 @@ body{
     color: white;
     
 }
+.edu-detail p{
+    padding: 0;
+    color:black;
+}
+h3{
+    color: rgb(39, 0, 62);
+}
 
 .resume-para{
     
